@@ -30,6 +30,7 @@ export class GifsService {
 
     // Inserta el nuevo elemento al inicio
     this._tagsHistory.unshift(tag);
+    this._tagsHistory = this.tagsHistory.slice(0, 10);
 
 
   }
