@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { SharedModule } from '../shared/shared.module';
+
 import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.compoent';
 import { ListCardComponent } from './components/list-card/list-card.component';
@@ -16,7 +18,8 @@ import { GifsCardComponent } from './components/gifs-card/gifs-card.component';
     GifsCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     HomePageComponent
